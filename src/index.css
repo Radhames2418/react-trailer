@@ -1,0 +1,101 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.stroke {
+    -webkit-text-stroke: .15rem black;
+}
+
+
+.stroke_section:hover {
+    -webkit-text-stroke: .1rem black;
+
+}
+
+/* Estilos base para los botones de navegación */
+.alice-carousel__next-btn-wrapper,
+.alice-carousel__prev-btn-wrapper {
+    position: absolute;
+    height: 11.3rem;
+    top: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.alice-carousel__next-btn-item,
+.alice-carousel__prev-btn-item {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.alice-carousel__next-btn-item:hover,
+.alice-carousel__prev-btn-item:hover {
+    color: white;
+}
+
+.alice-carousel__next-btn-wrapper {
+    right: 2%;
+    left: auto;
+}
+
+.alice-carousel__prev-btn-wrapper {
+    left: 2%;
+    right: auto;
+}
+
+
+/* Media Query para dispositivos con un ancho de pantalla menor o igual a 768px */
+@media (max-width: 768px) {
+    .alice-carousel__next-btn-wrapper,
+    .alice-carousel__prev-btn-wrapper {
+        width: 11%; /* Cambia el ancho según tus necesidades */
+        height: auto; /* Cambia la altura a auto para que se ajuste automáticamente al contenido */
+        top: 45%; /* Centra verticalmente */
+        transform: translateY(-50%); /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+    }
+
+    .alice-carousel__next-btn-wrapper {
+        right: 2%;
+        left: auto;
+    }
+
+    .alice-carousel__prev-btn-wrapper {
+        left: 2%;
+        right: auto;
+    }
+
+    .alice-carousel__next-btn-item,
+    .alice-carousel__prev-btn-item {
+        font-size: 3rem; /* Cambia el tamaño de fuente según tus necesidades */
+    }
+}
+
+@media (max-width: 390px) {
+    .alice-carousel__next-btn-wrapper,
+    .alice-carousel__prev-btn-wrapper {
+        width: 20%; /* Cambia el ancho según tus necesidades */
+        height: auto; /* Cambia la altura a auto para que se ajuste automáticamente al contenido */
+        top: 45%; /* Centra verticalmente */
+        transform: translateY(-50%); /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+    }
+
+    .alice-carousel__next-btn-wrapper {
+        right: 2%;
+        left: auto;
+    }
+
+    .alice-carousel__prev-btn-wrapper {
+        left: 2%;
+        right: auto;
+    }
+
+    .alice-carousel__next-btn-item,
+    .alice-carousel__prev-btn-item {
+        font-size: 2.5rem; /* Cambia el tamaño de fuente según tus necesidades */
+    }
+}
+
