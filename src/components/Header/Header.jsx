@@ -4,7 +4,9 @@ export default function Header() {
   return (
     <>
       <header className="flex justify-between items-center mt-2 px-3 py-3 lg:py-0 lg:px-7">
-        <img src={"/logo.jpg"} alt="Logo de la app" className="w-32 lg:w-52" />
+        <Link to={"/"}>
+          <img src={"/logo.jpg"} alt="Logo de la app" className="w-32 lg:w-52" />
+        </Link>
 
         <nav className="hidden sm:flex justify-center gap-3">
           <Link

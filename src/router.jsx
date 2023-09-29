@@ -3,6 +3,7 @@ import AuthLayout from './layouts/AuthLayout';
 import Login from './views/Login';
 import Registro from './views/Registro';
 import Inicio from './views/Inicio';
+import Trailer from './views/Trailer';
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
                 element: <Registro />
             }
         ]
+    },
+    {
+        path:'/trailer/:pelicula',
+        element: <Trailer />
     }
 ]);
 
