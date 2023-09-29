@@ -16,7 +16,7 @@ export default function Trailer() {
               allow="autoplay"
             ></iframe>
           </div>
-          <div className="bg-gray-50 p-5 shadow-md rounded-lg row-span-5 col-span-4">
+          <div className="bg-gray-50 p-5 shadow-lg row-span-5 col-span-4">
             <h2 className="text-lg font-semibold">Comentarios</h2>
             <div className="mt-4 h-80 overflow-y-auto">
               {/* Aquí puedes agregar lógica para mostrar los comentarios */}
