@@ -1,9 +1,8 @@
-import React from 'react';
 import Typewriter from 'typewriter-effect';
 
 export default function Footer() {
     return (
-        <div className='bg-gray-50 h-auto lg:h-52'>
+        <div className='bg-gray-50 h-auto lg:h-52 p-0 lg:p-10'>
             <div className='container p-5 lg:p-0 mx-auto h-full flex lg:flex-row flex-col items-center gap-8 lg:gap-10'>
                 <div className='flex gap-2 lg:gap-0 flex-row lg:flex-col text-primary-700  text-md md:text-2xl lg:text-3xl font-bold h-full  justify-center'>
                     <p className='w-auto lg:w-72'>Disfruta de los mejores trailers de</p>

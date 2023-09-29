@@ -1,6 +1,6 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-export default function ({trailer}) {
+export default function BannerVideo ({trailer}) {
     return (
         <>
             <div className="relative h-1/2 w-full bg-red-100 overflow-hidden shadow-inner">
@@ -19,3 +19,7 @@ export default function ({trailer}) {
         </>
     )
 }
+
+BannerVideo.propTypes = {
+    trailer: PropTypes.string.isRequired
+};

@@ -1,5 +1,4 @@
-import React from 'react'
-
+import PropTypes from 'prop-types';
 export default function Carouseltem({ imagen }) {
   return (
     <>
@@ -9,3 +8,7 @@ export default function Carouseltem({ imagen }) {
     </>
   )
 }
+
+Carouseltem.propTypes = {
+  imagen: PropTypes.string.isRequired
+};

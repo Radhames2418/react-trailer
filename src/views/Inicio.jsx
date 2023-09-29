@@ -1,4 +1,3 @@
-import React from "react";
 import trailer from "../helpers/trailer.mp4";
 import Header from "../components/Header/Header";
 import BannerVideo from "../components/Banner/BannerVideo";
